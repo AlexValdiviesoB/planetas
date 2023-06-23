@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>PlanetiQuiz</title>
+ <script src="js/javascript.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <!-- Modal para ingresar el nombre del concursante -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h1>¡Bienvenido a PlanetiQuiz!</h1>
+      <h3>Cada respuesta correcta te da 10 puntos</h3>
+      <p>Por favor, escribe tu nombre:</p>
+      <input type="text" id="playerName">
+      <button onclick="startGame()" class="btn btn-one">Comenzar</button>
+    </div>
+  </div>
+
+  <div id="game" style="display: none;">
+    <h1>"PlanetiQuiz"</h1>
+    <p>Pon a prueba tus habilidades astronómicas en este juego interactivo de preguntas.</p>
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <button onclick="nextQuestion()">Siguiente</button>
+    <h3 id="playerNameElement"></h3>
+    <img src="img/astroalien.png">
+  </div>
+
+  <div id="result" style="display: none;">
+    <h2 id="player-name"></h2>
+    <h3 id="score-message"></h3>
+    <img src="img/alienganadorfin.png">
+    <div>
+      <button id="play-again-button">¿Otra partida?</button>
+    </div>
+  </div>
+  
+
+  
+</div>
+
+</body>
+</html>
